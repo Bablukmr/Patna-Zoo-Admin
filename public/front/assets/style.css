@@ -1,0 +1,907 @@
+        @font-face {
+            font-family: ScholarlyAmbition;
+            src: url(Scholarly-Ambition-DEMO.ttf);
+        }
+
+         :root{
+            --chocolate:#372020;
+        }
+
+        .icon{
+            color: var(--chocolate);
+        }
+
+        .btn-black{
+            background: var(--chocolate);
+            border-radius: 20% 40%;
+            color: white;
+            width: 200px;
+            padding: 15px;
+        }
+
+        .fa-1x{
+            font-size: 25px;
+        }
+         
+        body {
+            padding: 0;
+            margin: 0;
+            font-family: sans-serif;
+            background: url('img/body-bg.png');
+            background-size: cover;
+            background-repeat: no-repeat;
+            /* overflow-x: hidden; */
+        }
+        
+        .btn-brown {
+            background: #372020;
+            color: white;
+        }
+
+        .font-family{
+            font-family:  ScholarlyAmbition;
+            letter-spacing: 2px;
+        }
+        
+        .text-head {
+            color: #372020;
+            font-weight: 900;
+            font-family: ScholarlyAmbition;
+            font-size: 60px;
+            text-align: center;
+            text-transform: capitalize !important;
+        }
+
+        .san-g-bio-head{
+            color: #372020;
+            font-weight: 900;
+            font-family: ScholarlyAmbition;
+            font-size: 60px;
+            text-align: start !important;
+        }
+        
+        .mini-head {
+            font-family: nova;
+            font-family: ScholarlyAmbition;
+            font-size: 50px;
+            font-weight: 900;
+            color: #372020;
+        }
+        
+        .text-para {
+            font-size: 20px;
+            color: black;
+        }
+
+        .numerial-font-family{
+            font-family: sans-serif;
+        }
+        
+        @media (max-width: 576px) {
+            .text-head {
+                font-size: 50px;
+            }
+        }
+
+        h1 .text-capitalize{
+            text-transform: capitalize !important;
+        }
+        /* =====================header Top======================================= */
+        
+        .head-para {
+            font-family: nova;
+            padding: 8px 0 0 0;
+            font-family: ScholarlyAmbition;
+        }
+        
+        .form-group {
+            padding: 8px 0 0 0;
+        }
+        
+        input[type=text] {
+            width: 100%;
+            box-sizing: border-box;
+            border: 2px solid #ccc;
+            border-radius: 4px;
+            font-size: 16px;
+            background-color: white;
+            background-image: url('img/icon/searchicon.png');
+            background-position: 10px 10px;
+            background-repeat: no-repeat;
+            padding: 4px 15px 4px 40px;
+        }
+        /* =============================navbar==================================== */
+        .logo-img {
+            height: 80px;
+        }
+        
+        .logo-img1 {
+            height: 60px;
+            margin: 0 10px;
+        }
+        
+        /* Navbar Styling */
+        .heading-radius {
+            background: rgba(240, 240, 240, 0.3);
+            border-radius: 20px;
+            padding: 10px 20px;
+            box-shadow: 0 0 5px black;
+        }
+        
+        .nav-link {
+            color: white;
+            font-weight: bold;
+            margin: 0 5px;
+        }
+        
+        .nav-link:hover {
+            background: rgba(229, 255, 229, 0.9);
+            border-radius: 20px;
+        }
+        
+        /* Book Button */
+        .book-btn {
+            background: rgba(255, 255, 255, 0.9);
+            color: black;
+            font-weight: bold;
+            border-radius: 90px;
+        }
+        
+        .book-btn:hover {
+            background: #a7eda7;
+        }
+        
+        /* Mega Menu Styling */
+        .mega-menu {
+            width: 100%;
+            background: rgba(255, 255, 255, 0.95);
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+        
+        /* Media Queries */
+        @media (max-width: 576px) {
+            .logo-img1 {
+                display: none;
+            }
+            .heading-radius {
+                padding: 10px;
+                margin: 0;
+                background: white;
+            }
+            .book-btn {
+                font-size: 14px;
+                padding: 5px 10px;
+            }
+            .header-main{
+                display: none;
+            }
+          
+        }
+        
+        @media (max-width: 768px) {
+            .logo-img {
+                height: 60px;
+            }
+            .heading-radius {
+                padding: 8px;
+                background: white !important;
+               
+            }
+            .header-main{
+                display: none;
+            }
+
+            .nav-link{
+                color: black;
+            }
+            
+            
+        }
+
+       .navbar{
+        box-shadow: none;
+        top: 1;
+        position: absolute;
+       }
+     
+        
+        /* =====================header Top End======================================= */
+        /* =====================Banner=============================================== */
+        
+        .bg-image {
+            height: 1200px;
+           /*  margin-top: -8%;  */
+            z-index: -9999 ;
+            background-image: url('img/Hero.jpg');
+        }
+        .bg-image1 {
+            height: 1200px;
+           /*  margin-top: -8%;  */
+            z-index: -9999 ;
+            background-image: url('img/bg-img.png');
+        }
+        
+
+            /* Media Queries */
+           /*  @media (max-width: 576px) {
+              .bg-image {
+                    margin-top: -20% !important;
+                }  
+            }
+             */
+          /*   @media (max-width: 768px) {
+              .bg-image {
+                    margin-top: -20% !important;
+                }  
+            } */
+        /*  .banner{
+            width: 100%;
+            position: relative;  
+         } */
+        /* =========================Banner Swipper=========================================== */
+        /*  .slider-banner{
+        width: 100%;
+        top: ;
+        position: absolute;
+       } */
+
+       .banner-swip-img{
+        transform: scale(2.5, 1.5);
+        
+       }
+
+       .swiper-size-slide{
+        margin-top: -20%;
+       }
+        
+        .swiper-slide {
+            background: #fff;
+            border-radius: 8px;
+            width: 100%;
+        }
+        
+        .image-box {
+            height: 425px;
+            border-radius: 40px;
+            overflow: hidden;
+            width: 309px;
+           
+            /* box-shadow: black 0 0 25px 0; */
+        }
+        
+        .slide-container {
+            margin: 0 30px;
+            overflow: hidden;
+        }
+        
+        .image-box img {
+            width: 100%;
+            height: 425px;
+        }
+        
+        .swiper-slide {
+            background-color: transparent;
+        }
+        
+        .slide-col {
+            width: 100%;
+        }
+
+            /* Media Queries */
+            @media (max-width: 576px) {
+                .swiper-size-slide{
+                    margin-top: -60%;
+                   }
+              
+            }
+
+              
+        @media (max-width: 768px) {
+            .swiper-size-slide{
+                margin-top: -60%;
+               }
+          
+            
+            
+        }
+
+        /* =========================About Patna Zoo=========================================== */
+        
+            .elephant{
+                width: 50%;
+                height: 400px;
+            }
+        
+      
+    
+        
+        /* ========================= endless-head================================================ */
+        /* Slideshow container */
+        
+        .slideshow-container {
+            position: relative;
+            margin: auto;
+        }
+        
+        .endless-slide {
+            margin: 0;
+            padding: 0;
+        }
+        
+        .endless-img {
+            height: 400px;
+            width: 100%;
+        }
+        /* Caption text */
+        
+        .text {
+            color: #f2f2f2;
+            font-size: 15px;
+            padding: 8px 12px;
+            position: absolute;
+            bottom: 8px;
+            width: 100%;
+            text-align: center;
+        }
+        /* Number text (1/3 etc) */
+        
+        .numbertext {
+            color: #f2f2f2;
+            font-size: 12px;
+            padding: 8px 12px;
+            position: absolute;
+            top: 0;
+        }
+        /* The dots/bullets/indicators */
+        
+        .dot {
+            height: 15px;
+            width: 15px;
+            margin: 0 2px;
+            background-color: #bbb;
+            border-radius: 50%;
+            display: inline-block;
+            transition: background-color 0.6s ease;
+        }
+        
+        .active {
+            background-color: #717171;
+        }
+        /* Fading animation */
+        
+        .fade {
+            animation-name: fade;
+            animation-duration: 2.5s;
+        }
+        
+        @keyframes fade {
+            from {
+                opacity: .4
+            }
+            to {
+                opacity: 1
+            }
+        }
+        /* On smaller screens, decrease text size */
+        
+        @media only screen and (max-width: 300px) {
+            .text {
+                font-size: 11px
+            }
+            
+          }
+
+
+          @media (max-width: 468px) {
+            .endless-img {
+                height: 200px;
+          
+            }
+        }
+        
+       /*   @media (max-width: 768px) {
+           
+        }  */
+
+        /* ========================Sanjay Gandhi Biological Park, Patna=================================== */
+        
+        .birds-imz-size {
+            height: 75px;
+            width: 99px;
+            margin-left: 70%;
+        }
+        
+        .visit-img-card {
+            border-radius: 40px;
+        }
+        
+        .visit-img-plan {
+            height: 400px;
+            width: 100%;
+            border-radius: 40px;
+        }
+        
+        .card-text {
+            padding-top: 15px;
+            font-weight: 400;
+            color: #372020;
+            font-size: 40px;
+            text-align: center;
+        }
+        
+        .sanjay-head {
+            color: #372020;
+            font-weight: 900;
+            font-size: 60px;
+        }
+
+     /*    @media (max-width: 468px) {
+           
+        }
+         */
+       /*   @media (max-width: 768px) {
+           
+        }  */
+       
+        /* ======================video-animated==================== */
+        
+        .video-box {
+            height: 620px;
+            width: 100%;
+            border-radius: 80px;
+            overflow: hidden;
+        }
+
+        @media (max-width: 468px) {
+            .video-box {
+                height: 400px;
+                
+            }
+        }
+        
+        /*--================================Footer strt=====================================--*/
+        /* ----------------explore tab--------------- */
+        
+        .footer-box {
+            /* position: relative; */
+            padding-bottom: 10px;
+            background: transparent;
+            border-radius: 20px;
+            box-shadow: 2px 2px 5px rgb(199, 199, 199);
+        }
+        
+        .list-link {
+            list-style-type: none;
+            color: black;
+            font-size: 20px;
+        }
+        
+        .video-background {
+            position: absolute;
+            /*  top: 0;*/
+            /* margin-top: -20%; */
+            margin-left: -11px;
+            width: 99.9%;
+            height: 100%;
+            object-fit: cover;
+            z-index: -1;
+        }
+        /* ===================bg-mammals======================= */
+        
+        .bg-mammals {
+            background: url('img/LeoPard.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            height: 650px;
+            width: 100%;
+        }
+
+        @media (max-width: 540px) {
+            .bg-mammals {
+                height: 1500px;
+                
+            }
+        }
+        /* ======================== mamals-height-section====================== */
+        
+        .mamals-height-section {
+            height: 185px;
+            width: 90%;
+            border-radius: 20px;
+        }
+        /* ===================bg-birds======================= */
+        
+        .bg-birds {
+            background: url('img/peacock-bg.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            height: 650px;
+            width: 100%;
+        }
+        
+        .birds-height-section {
+            height: 345px;
+            width: 263px;
+            border-radius: 20px;
+        }
+
+        @media (max-width: 540px) {
+            .bg-birds {
+                height: 1500px;
+         
+            }
+        }
+        /* ===================bg-reptile======================= */
+        
+        .bg-reptile {
+            background: url('img/Turtle.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            height: 650px;
+            width: 100%;
+        }
+        
+          .reptile-container{
+            height: 650px;
+          }
+
+          .reptile-img{
+            width: 100%;
+            height: 200px;
+            border-radius: 20px;
+          }
+
+          .reptile-img-title{
+            color: white;
+            font-size: 30px;
+            font-family: ScholarlyAmbition;
+           
+          }
+
+          
+/* 
+          @media (max-width: 540px) {
+            .bg-reptile {
+                height: 1500px;
+            }
+        } */
+        /* ===================bg-primates======================= */
+        
+        .bg-primate {
+            background: url('img/Primate.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            height: 650px;
+            width: 100%;
+        }
+        
+        .primate-height-section {
+            height: 240px;
+            width: 100%;
+            border-radius: 20px;
+        }
+        
+         .primate-head{
+            font-family: ScholarlyAmbition;
+            margin-top: 10%;
+            color: white;
+         }
+
+         .primate-img{
+            width: 90%;
+            height: 250px;
+            border-radius: 20px;
+         }
+
+         .primate-img-title{
+            font-family: ScholarlyAmbition;
+            font-size: 30px;
+            color: white;
+         }
+        
+        @media (max-width:479px) {
+            .video-background {
+                margin-top: -95%;
+            }
+            .content {
+                margin-top: 100%;
+            }
+
+            .bg-primate {
+                height: 1200px;
+            
+            }
+        }
+
+/* ================================Explore Our Zoo=================================== */
+        .animal-box{
+            background: #fff;
+            background: url('img/Explore-Our-Zoo/Zebra.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            width: 100%;
+            height: 450px;
+            border-radius: 20px;
+            position: relative;
+        }
+
+        .exp-zoo-btn{
+            width: 100%;
+            height: initial;
+            /* margin-left: 25%; */
+            position: absolute;
+            margin-top: 152%;
+            justify-content: center;
+            display: flex;
+        }
+
+        .btn-white{
+            background-color: white !important;
+        }
+
+       @media (max-width:479px) {
+        .animal-box{
+            height: 590px;
+           
+          }
+        } 
+
+
+    /* ========================Book Your Ticket====================================== */
+     /* Background and Container Styling */
+            .bg-book-ticket {
+                background: url('img/Book-Your-Ticktes.jpg') no-repeat center center/cover;
+                width: 100%;
+                height: 500px;
+                display: flex;
+                align-items: center;
+            }
+
+            .book-ticket-container {
+                max-width: 1200px;
+                height: auto;
+                margin: 0 auto;
+            }
+
+
+            /* Card Styling */
+            .tkt-card-box {
+                height: auto;
+            }
+
+            .tkt-card {
+                border-radius: 25px;
+                overflow: hidden;
+            }
+
+            /* Open Now Section */
+            .open-now {
+                background: #372020;
+                color: white;
+                font-size: 1.5rem;
+                font-weight: 600;
+                border-radius: 7px;
+                width: fit-content;
+                display: inline-block;
+                padding: 5px 15px;
+                transform: rotate(-10deg);
+                margin-top: 10px;
+                margin-left: -50px;
+                font-family: 'ScholarlyAmbition', sans-serif;
+                letter-spacing: 2px;
+            }
+
+            .open-time {
+                height: auto;
+                position: relative;
+                padding: 20px;
+                border-right: 2px solid rgb(90, 90, 90);
+            }
+
+            .display-7 {
+                font-size: 1.5rem;
+            }
+
+            .display-8 {
+                font-size: 1.2rem;
+                margin-top: 10px;
+            }
+
+            .opening-hrs {
+                font-size: 20px;
+                color: #555;
+            }
+
+            /* Book Tickets Section */
+            .book-tkt {
+                padding: 15px;
+                margin-top: 20px;
+            }
+
+            .book-tkt-text {
+                font-size: 1.5rem;
+                font-weight: bold;
+                color: var(--chocolate, #5a4235);
+            }
+
+            .visit-text {
+                font-size: 1rem;
+                color: #555;
+            }
+
+            /* Button Styling */
+            .btn-black {
+                background: #5a4235;
+                color: white;
+                font-size: 1rem;
+                border-radius: 5px;
+                padding: 10px 20px;
+                text-decoration: none;
+                transition: background-color 0.3s;
+            }
+
+            .btn-black:hover {
+                background: #7a5c46;
+            }
+
+            /* Responsive Design */
+            @media (max-width: 768px) {
+                .bg-book-ticket {
+                    height: auto;
+                }
+
+                .tkt-card {
+                    width: 90%;
+                    margin: 0 auto;
+                }
+
+                .open-now {
+                    margin-left: 0;
+                    transform: none;
+                }
+
+                .open-time {
+                    border-right: none;
+                    border-bottom: 2px solid rgb(90, 90, 90);
+                    margin-bottom: 20px;
+                }
+
+                .book-tkt {
+                    text-align: center;
+                }
+
+                .btn-black {
+                    display: block;
+                    margin: 20px auto 0;
+                }
+            }
+
+        
+    
+/* ==========================social icons =================================== */
+        
+        .face-icon {
+            background-color: blue;
+            border-radius: 50%;
+            color: white;
+            margin: 5px;
+        }
+        
+        .insta-icon {
+            background-color: #B63988;
+            border-radius: 50%;
+            color: white;
+            margin: 5px;
+        }
+        
+        .twitter-icon {
+            background-color: #1D9AEE;
+            border-radius: 50%;
+            color: white;
+            margin: 5px;
+        }
+        
+        .youtube-icon {
+            background-color: #FF0F0F;
+            border-radius: 50%;
+            color: white;
+            margin: 4px;
+        }
+        
+        .social-size {
+            font-size: 20px;
+        }
+        /* .footer-bg {
+            height: 50%;
+            width: 100%;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 50%;
+            object-fit: cover;
+            z-index: -1;
+            
+        } */
+        /* --------------------------media query--------------------------- */
+        
+        @media (max-width:479px) {
+            .tablinks-1,
+            .tablinks-2,
+            .tablinks-3 {
+                margin-left: -9px !important;
+            }
+            .designby-text {
+                text-align: center !important;
+            }
+            .social-center {
+                display: flex;
+                justify-content: center !important;
+                align-items: center !important;
+            }
+            .footer-box {
+                overflow: hidden;
+            }
+        }
+
+
+/* ============internaml pages================================================ */
+/* ================================================================================= */
+/* ===================lion-page===================== */
+        
+        .bg-image-lion {
+            height: 900px;
+            margin-top: -7%;
+            background-image: url('img/header-lion-page.png');
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .icon-heightt {
+            height: 40px;
+        }
+
+        .lion-image-height {
+            border-radius: 50px 50px 50px 50px;
+            height: 500px;
+            width: 100%;
+        }
+
+        .bg-lion-section {
+            background: #EBEBEB;
+        }
+
+        .lion-second-image-height {
+            height: 500px;
+            width: 100%;
+        }
+
+        .panther-leo {
+            margin-left: -1%;
+        }
+
+        .explore-zoo {
+            background: url('img/Lion-in-zoo.png');
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 504px;
+        }
+
+        .lion-icon-col {
+            border-left: 1px solid gray;
+        }
+
+        .card-mid-height {
+            margin-top: 7%;
+        }
+
+        .list-text {
+            font-size: 19px;
+            font-weight: 200;
+            color: black;
+        }
+
+
+
+
+        
