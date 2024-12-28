@@ -1,4 +1,5 @@
 <?php
+
 namespace App\Filament\Resources;
 
 use App\Filament\Resources\TicketResource\Pages;
@@ -6,11 +7,12 @@ use App\Models\Ticket;
 use Filament\Forms;
 use Filament\Tables;
 use Filament\Resources\Resource;
+use Filament\Tables\Actions\BulkAction;
+use Illuminate\Support\Facades\PDF;
 
 class TicketResource extends Resource
 {
     protected static ?string $model = Ticket::class;
-
     protected static ?string $navigationIcon = 'heroicon-o-ticket';
 
     public static function form(Forms\Form $form): Forms\Form
@@ -46,12 +48,26 @@ class TicketResource extends Resource
                 Tables\Columns\TextColumn::make('total_price')->money('INR')->sortable(),
             ])
             ->filters([])
-            ->actions([
-                // Tables\Actions\EditAction::make(),
-                // Tables\Actions\DeleteAction::make(),
-            ])
+            ->actions([]) // Removed Edit and Delete actions
             ->bulkActions([
-                Tables\Actions\DeleteBulkAction::make(),
+                BulkAction::make('download_selected')
+                    ->label('Download Selected Tickets')
+                    ->action(function ($records) {
+                        // Generate PDF with the selected tickets
+                        $pdf = PDF::loadView('ticket-pdf', ['tickets' => $records]);
+
+                        // Return the generated PDF as a downloadable response
+                        return response()->stream(
+                            function () use ($pdf) {
+                                echo $pdf->output();
+                            },
+                            200,
+                            [
+                                "Content-Type" => "application/pdf",
+                                "Content-Disposition" => "attachment; filename=tickets.pdf",
+                            ]
+                        );
+                    }),
             ]);
     }
 
@@ -59,8 +75,7 @@ class TicketResource extends Resource
     {
         return [
             'index' => Pages\ListTickets::route('/'),
-            'create' => Pages\CreateTicket::route('/create'),
-            'edit' => Pages\EditTicket::route('/{record}/edit'),
+            // Remove 'create' and 'edit' pages
         ];
     }
 }

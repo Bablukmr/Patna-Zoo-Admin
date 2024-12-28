@@ -217,14 +217,20 @@
                             </ul>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link " aria-current="page" href="#">Tender</a>
+                            <a class="nav-link " aria-current="page" href="/gallery">Gallery</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link " aria-current="page" href="/tender">Tender</a>
                         </li>
 
 
                     </ul>
-                    <button class="btn btn-primary book-btn">Book Ticket</button>
+                    <a href="/ticket-booking" class="btn btn-primary book-btn">Book Ticket</a>
                 </div>
                 <a class="navbar-brand" href="#"><img src="{{asset('front/assets/img/Bihar-Govt-Logo.png')}}" class="img-fluid logo-img1" alt=""></a>
             </nav>
         </div>
     </section>
+
+    <!-- Background image -->
+    <div class="bg-image1" style="height: 100px;"></div>

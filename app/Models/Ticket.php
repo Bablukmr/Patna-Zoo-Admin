@@ -18,5 +18,7 @@ class Ticket extends Model
         'adults',
         'children',
         'total_price',
+        'reference_number',
+        'transaction_number',
     ];
 }
